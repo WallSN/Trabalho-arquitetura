@@ -16,7 +16,7 @@ API (REST)
     -> Retorna a lista de compromissos.
 
 - POST /compromissos  
-    -> Cria um compromisso. Content-Type: application/json  
+    -> Cria um compromisso.
     Exemplo de body:
     {
         "data": "25/12/2025",
@@ -27,13 +27,13 @@ API (REST)
 
 Exemplos
 - Listar:
-    curl http://localhost:3000/compromissos
+    http://localhost:3000/compromissos
 
 - Criar via POST usando query string:
-    curl -X POST "http://localhost:3000/compromissos?data=25/12/2025&hora_inicio=14:00&hora_fim=15:00&descricao=Reunião%20de%20Natal"
+    http://localhost:3000/compromissos?data=25/12/2025&hora_inicio=14:00&hora_fim=15:00&descricao=Reunião%20de%20Natal
 
-- Criar via POST usando query string com valores explicitamente codificados:
-    curl -X POST "http://localhost:3000/compromissos?data=25%2F12%2F2025&hora_inicio=14%3A00&hora_fim=15%3A00&descricao=Reuni%C3%A3o%20de%20Natal"
+- Criar via POST usando query string com valores codificados:
+    http://localhost:3000/compromissos?data=25%2F12%2F2025&hora_inicio=14%3A00&hora_fim=15%3A00&descricao=Reuni%C3%A3o%20de%20Natal
 
 Observações
 - Formatos: data -> DD/MM/YYYY, horas -> HH:MM (24h).  
