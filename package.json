@@ -1,0 +1,28 @@
+{
+  "name": "trabalho-arquitetura",
+  "version": "1.0.0",
+  "main": "dist/cli.js",
+  "scripts": {
+    "build": "tsc",
+    "dev:cli": "node --loader ts-node/esm src/adapters/cli.ts",
+    "start:rest": "npm run build && node dist/adapters/rest.js",
+    "dev:rest": "node --loader ts-node/esm src/adapters/rest.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/express": "^5.0.5",
+    "@types/node": "^24.10.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "type": "module",
+  "dependencies": {
+    "@types/sqlite3": "^5.1.0",
+    "express": "^5.1.0",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7"
+  }
+}
