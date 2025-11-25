@@ -1,7 +1,10 @@
 Descrição
 - Pequena API para gerenciar compromissos (listar e cadastrar).
 
-Comandos
+Como usar
+- Clonar o repositório
+- rodar o comando "npm install" para instalação das dependências
+Comandos:
 - npm run dev:cli listar_compromissos  
     -> Lista todos os compromissos via CLI.
 
@@ -40,9 +43,3 @@ Body:
 "hora_fim": "15:00",
 "descricao": "Reunião de Natal"
 }
-
-Observações
-- Formatos: data -> DD/MM/YYYY, horas -> HH:MM (24h).  
-- Validação: garanta que hora_inicio < hora_fim e que os formatos estejam corretos antes de inserir.
-- Porta padrão: 3000 (ajuste conforme configuração).
-- Ao enviar parâmetros na URL, certifique-se de codificar caracteres especiais (espaços, acentos, barras, dois-pontos) quando necessário.
