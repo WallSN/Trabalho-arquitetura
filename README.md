@@ -1,5 +1,5 @@
 Descrição
-- Pequena API para gerenciar compromissos (listar e cadastrar).
+- Projeto em TypeScript para gerenciar compromissos (listar e cadastrar).
 
 Como usar
 - Clonar o repositório
