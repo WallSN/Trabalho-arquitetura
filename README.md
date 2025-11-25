@@ -26,14 +26,20 @@ API (REST)
     }
 
 Exemplos
-- Listar:
-    http://localhost:3000/compromissos
 
-- Criar via POST usando query string:
-    http://localhost:3000/compromissos?data=25/12/2025&hora_inicio=14:00&hora_fim=15:00&descricao=Reunião%20de%20Natal
+Listar compromissos (GET):
+http://localhost:3000/compromissos
 
-- Criar via POST usando query string com valores codificados:
-    http://localhost:3000/compromissos?data=25%2F12%2F2025&hora_inicio=14%3A00&hora_fim=15%3A00&descricao=Reuni%C3%A3o%20de%20Natal
+Criar compromisso (POST) via Postman (body JSON):
+URL: http://localhost:3000/compromissos
+
+Body:
+{
+"data": "25/12/2025",
+"hora_inicio": "14:00",
+"hora_fim": "15:00",
+"descricao": "Reunião de Natal"
+}
 
 Observações
 - Formatos: data -> DD/MM/YYYY, horas -> HH:MM (24h).  
